@@ -1,0 +1,89 @@
+.footer {
+    margin-top: 250px;
+    padding: 47px 85px;
+    background-color: #282F38;
+    &__wrapper {
+        @include flex(space-between);
+        gap: 103px;
+    }
+    &__left {
+        @include flex(space-between);
+        gap: 33px;
+    }
+    &__list {
+        @include flex(space-between);
+        gap: 33px;
+        li a {
+            font-family: $BorlowBold;
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: 0.923077px;
+            text-transform: uppercase;
+            color: #83888F;
+            &:hover {
+                color: #FEFCF7;
+            }
+            ;
+            &:active {
+                color: #8e3a19;
+            }
+        }
+    }
+    &__right a {
+        margin-right: 24px;
+    }
+}
+
+#facebook:hover {
+    fill: #F67E7E;
+}
+
+#facebook:active {
+    fill: aqua;
+}
+
+#twitter:hover {
+    fill: #F67E7E;
+}
+
+#twitter:active {
+    fill: aqua;
+}
+
+#instagram:hover {
+    fill: #F67E7E;
+}
+
+#instagram:active {
+    fill: aqua;
+}
+
+@media only screen and(max-width:768px) {
+    .footer {
+        &__wrapper {
+            flex-direction: column;
+            gap: 65px;
+        }
+        &__left {
+            flex-direction: column;
+            gap: 33px;
+        }
+    }
+}
+
+@media only screen and(max-width:375px) {
+    .footer {
+        margin-top: 130px;
+        &__wrapper {
+            flex-direction: column;
+            gap: 65px;
+        }
+        &__left {
+            flex-direction: column;
+            gap: 33px;
+        }
+        &__list {
+            flex-direction: column;
+        }
+    }
+}

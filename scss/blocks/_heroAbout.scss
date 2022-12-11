@@ -1,0 +1,78 @@
+.heroabout {
+    &__wrapper {
+        height: 450px;
+        margin-top: 45px;
+        padding: 117px 85px;
+        background-image: url(../Images/hero-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+    }
+    &__title {
+        width: 188px;
+        height: 78px;
+        font-family: $FrauncesBold;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 48px;
+        color: #FEFCF7;
+    }
+    &__subtitle {
+        width: 455px;
+        height: 104px;
+        margin: 24px 0px 0px 0px;
+        color: #FEFCF7;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .heroabout {
+        &__wrapper {
+            background-position: center;
+            margin-bottom: 144px;
+        }
+        &__title {
+            width: 329px;
+            height: 97px;
+            font-size: 48px;
+            line-height: 48px;
+            color: #FEFCF7;
+        }
+        &__subtitle {
+            width: 398px;
+            height: 75px;
+            font-size: 15px;
+            line-height: 25px;
+            mix-blend-mode: normal;
+            opacity: 0.8;
+        }
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .heroabout {
+        width: 375px;
+        &__wrapper {
+            max-width: 375px;
+            background-position: center;
+            padding: 100px 24px;
+        }
+        &__title {
+            height: 81px;
+            font-size: 40px;
+            line-height: 40px;
+            width: 279px;
+            margin-left: 0px;
+            text-align: center;
+        }
+        &__subtitle {
+            width: 279px;
+            height: 101px;
+            text-align: center;
+        }
+        button {
+            padding: 15px 31px;
+            width: 217px;
+        }
+    }
+}

@@ -1,0 +1,80 @@
+        .commit {
+            height: 512px;
+            margin-top: 168px;
+            &__wrapper {
+                @include flex ();
+                gap: 125px;
+            }
+            &__left {
+                max-width: 281px;
+                height: 470px;
+            }
+            &___right h3 {
+                font-family: $FrauncesBold;
+                font-size: 40px;
+                line-height: 48px;
+                color: #333D4B;
+            }
+            &___right p {
+                margin-top: 32px;
+                width: 540px;
+                height: 260px;
+                color: #333D4B;
+                mix-blend-mode: normal;
+                opacity: 0.8;
+            }
+        }
+        
+        @media only screen and (max-width:768px) {
+            .commit {
+                height: 453px;
+                &__wrapper {
+                    gap: 50px;
+                }
+                &___right {
+                    max-width: 339px;
+                }
+                &___right h3 {
+                    max-width: 286px;
+                    font-size: 32px;
+                    line-height: 48px;
+                }
+                &___right p {
+                    margin-top: 30px;
+                    max-width: 339px;
+                    height: 350px;
+                    font-size: 15px;
+                    line-height: 25px;
+                }
+                &__imgs {
+                    max-width: 281px;
+                    height: 470px;
+                }
+            }
+        }
+        
+        @media only screen and (max-width:375px) {
+            .commit {
+                // height: 453px;
+                &__wrapper {
+                    gap: 48px;
+                    flex-direction: column;
+                }
+                &___right {
+                    max-width: 339px;
+                }
+                &___right h3 {
+                    max-width: 327px;
+                    height: 48px;
+                }
+                &___right p {
+                    margin-top: 30px;
+                    max-width: 327px;
+                    height: 375px;
+                }
+                &__imgs {
+                    max-width: 327px;
+                    height: 400px;
+                }
+            }
+        }

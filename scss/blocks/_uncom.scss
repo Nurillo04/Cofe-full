@@ -1,0 +1,112 @@
+.uncom {
+    margin-top: 244px;
+    &__wrapper {
+        display: flex;
+        position: relative;
+        height: 474px;
+        background: #2C343E;
+        border-radius: 10px;
+    }
+    &__left {
+        padding: 100px 0px 0px 85px;
+    }
+    &__left h3 {
+        font-family: $FrauncesBold;
+        font-size: 40px;
+        line-height: 48px;
+        color: #FEFCF7;
+    }
+    &__left p {
+        margin-top: 32px;
+        width: 540px;
+        height: 130px;
+        color: #FEFCF7;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+    }
+    &__right {
+        background-image: url(../Images/uncom-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        right: 85px;
+        width: 445px;
+        height: 474px;
+        top: -84px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .uncom {
+        margin-top: 300px;
+        &__wrapper {
+            flex-direction: column;
+            // position: relative;
+            height: 488px;
+            max-width: 688px;
+        }
+        &__left h3 {
+            font-size: 32px;
+            line-height: 48px;
+            text-align: center;
+            max-width: 413px;
+            height: 48px;
+            margin-top: 122px;
+            margin-left: 60px;
+        }
+        &__left p {
+            max-width: 540px;
+            height: 125px;
+            text-align: center;
+            margin-top: 24px;
+        }
+        &__right {
+            background-image: url(../Images/uncombg2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            right: 119px;
+            max-width: 573px;
+            max-height: 320px;
+            top: -162px;
+        }
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .uncom {
+        margin-top: 700px;
+        &__wrapper {
+            flex-direction: column;
+            // position: relative;
+            height: 488px;
+            max-width: 688px;
+        }
+        &__right {
+            background-image: url(../Images/uncombg2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            left: 35px;
+            max-width: 279px;
+            max-height: 156px;
+            top: -93px;
+        }
+        &__left h3 {
+            font-size: 28px;
+            line-height: 28px;
+            max-width: 279px;
+            height: 56px;
+            margin-top: 36px;
+            margin-left: -66px;
+        }
+        &__left p {
+            max-width: 279px;
+            height: 226px;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            margin-left: -53px;
+        }
+    }
+}

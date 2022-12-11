@@ -1,0 +1,127 @@
+  .header {
+      &__wrapper {
+          @include flex( space-between, center);
+          margin-top: 40px;
+      }
+      &__list {
+          @include flex( space-between, center);
+          gap: 32px;
+      }
+      &__list a {
+          height: 15px;
+          font-family: $BorlowBold;
+          font-size: 12px;
+          line-height: 15px;
+          letter-spacing: 0.923077px;
+          text-transform: uppercase;
+          color: #83888F;
+          text-transform: uppercase;
+          &:hover {
+              color: #333D4B;
+          }
+      }
+      label {
+          display: none;
+      }
+  }
+  
+  @media only screen and(max-width:376px) {
+      .header {
+          &__list {
+              display: none;
+              cursor: pointer;
+          }
+          label {
+              display: block;
+          }
+      }
+  }
+  
+  .mobil {
+      position: fixed;
+      top: 2px;
+      bottom: 100%;
+      width: 375px;
+      height: 500px;
+      background: #2C6269;
+      transition: all 0.5s linear;
+      transform: translateX(100%);
+      background: linear-gradient(180deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
+      transform: matrix(1, 0, 0, -1, 0, 0);
+  }
+  
+  .mobil-item {
+      font-family: $BorlowBold;
+      padding-left: 30px;
+      margin-top: 25px;
+      font-size: 24px;
+      line-height: 32px;
+      text-align: center;
+      color: #333D4B;
+  }
+  
+  //   .mobil button {
+  //       display: block;
+  //       background: #0E8784;
+  //       border-radius: 6px;
+  //       padding: 15px 31px;
+  //       border: 0;
+  //       font-family: "Fraunces-bold";
+  //       font-size: 18px;
+  //       line-height: 25px;
+  //       text-align: center;
+  //       color: #FEFCF7;
+  //   }
+  //   .mobil button:hover {
+  //       background: #6675d2;
+  //       border-radius: 6px;
+  //   }
+  //   .mobil button:active {
+  //       background: #760a42;
+  //       border-radius: 6px;
+  //   }
+  .inputx {
+      width: 20px;
+      height: 20px;
+      margin-left: 325px;
+      font-size: 25px;
+      text-align: right;
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 1px;
+      margin-bottom: 41px;
+      border-radius: 1.5px;
+  }
+  
+  #input {
+      display: none;
+  }
+  
+  #input2 {
+      display: none;
+  }
+  
+  #input:checked~.mobil {
+      transform: translateX(-329px);
+  }
+  
+  #input2:checked~.mobil {
+      transform: translateX(100%);
+  }
+  
+  #input {
+      display: none;
+  }
+  
+  #input:checked~.header__right img {
+      transform: rotateZ(180deg);
+  }
+  
+  @media only screen and(min-width:376px) {
+      .mobil {
+          display: none;
+      }
+      .hamburger-menu {
+          display: block;
+      }
+  }

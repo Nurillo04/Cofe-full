@@ -1,0 +1,41 @@
+@mixin flex ( $jconten: center, $align: center) {
+    display: flex;
+    justify-content: $jconten;
+    align-items: $align;
+}
+
+@mixin button {
+    background: #0E8784;
+    border-radius: 6px;
+    padding: 15px 31px;
+    border: 0;
+    font-family: "Fraunces-bold";
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #FEFCF7;
+    &:hover {
+        background: #6675d2;
+        border-radius: 6px;
+    }
+    &:active {
+        background: #760a42;
+        border-radius: 6px;
+    }
+}
+
+@mixin cardss {
+    // width: 228px;
+    // height: 250px;
+    padding: 32px 28px 84px 28px;
+    background: #F4F1EB;
+    border-radius: 8px;
+    margin: 56px 0px 88px 0px;
+    &:hover {
+        background: #FDD6BA;
+    }
+    &:active {
+        background: #0E8784;
+        color: white;
+    }
+}
